@@ -49,38 +49,27 @@ node server.mjs
 
 3. Load the Chrome extension
 
-Open chrome://extensions/
-
-Enable Developer mode
-
-Click Load unpacked
-
-Select the youtube-auto-translate-extension folder
+- Open chrome://extensions/
+- Enable Developer mode
+- Click Load unpacked
+- Select the **youtube-auto-translate-extension** folder
 
 4. Try it out
 
-Open a YouTube video with captions enabled
+- Open a YouTube video with captions enabled
+- Select translation direction (English ⇄ Spanish) from the popup
+- Watch captions auto-translate 
 
-Select translation direction (English ⇄ Spanish) from the popup
+**Notes on Security**:
+- The Google API key in server.mjs is .gitignore’d and not pushed to GitHub.
+- Future versions should migrate API keys to a .env file and use environment variables.
 
-Watch captions auto-translate 
+## **Roadmap**
+- Add support for more languages
+- Improve caption update speed
+- Better error handling and user feedback
+- Package for the Chrome Web Store
 
-Notes on Security
-
-The Google API key in server.mjs is .gitignore’d and not pushed to GitHub.
-
-Future versions should migrate API keys to a .env file and use environment variables.
-
-Roadmap
-
- Add support for more languages
-
- Improve caption update speed
-
- Better error handling and user feedback
-
- Package for the Chrome Web Store
 
 License
-
 MIT License – feel free to use, modify, and share.
